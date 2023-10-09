@@ -1,0 +1,254 @@
+.confirm-payment-wrapp .confirm-method{
+opacity: 0;
+pointer-events: none;
+height: 0;
+transition: .2s ease-in-out;
+}
+
+.confirm-payment-wrapp .confirm-method.isActive{
+opacity: 1;
+pointer-events: all;
+height: 100%;
+margin-bottom: 32px;
+transition: .2s ease-in-out;
+}
+
+.confirm-payment-wrapp .primary-btn{
+	padding: 16px;
+	width: 100%;
+	border-radius: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	background: var(--primary-color);
+	font-size: 18px;
+	font-weight: 500;
+	transition: .2s ease-in-out;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.confirm-payment-wrapp .btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+.confirm-payment-wrapp .btns .back{
+	padding: 16px 32px;
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 14px;
+	font-size: 18px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .30);
+	cursor: pointer;
+}
+
+.confirm-payment-wrapp .btns img{
+	margin-right: 8px;
+}
+
+.confirm-payment-wrapp .btns .back{
+	margin-right: 32px;
+}
+
+.confirm-payment-wrapp .info-payment-wrapp .left-content .payment-logo{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, .15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 16px;
+}
+
+.confirm-payment-wrapp .info-payment-wrapp .left-content .payment-logo img{
+	width: 20px;
+	height: 20px;
+}
+
+fieldset {
+    position: relative;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+}
+
+.group.float{
+	margin-bottom: 32px;
+	width: 100%;
+}
+
+fieldset input{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: rgba(0, 0, 0, .3);
+	border-bottom: 1px solid rgba(0, 0, 0, .15);
+	padding-top: 12px;
+	padding-bottom: 11px;
+	transition: .2s ease-in-out;
+}
+
+fieldset input:focus{
+	border: none;
+	color: rgba(104, 128, 255, 0.6);
+	border-bottom: 1px solid #D2D9FF;	
+}
+
+.float input + label {
+    position: absolute;
+    display: block;
+    top: 13px;
+    left: 0px;
+    color: rgba(0, 0, 0, .3);
+    font-size: 16px;
+    cursor: text;
+    transition: 0.2s ease-in-out all;
+}
+
+.float input:focus + label, .float label.stay {
+    top: -8px;
+    left: 0px;
+    color: #9f9ea3;
+    font-size: 13px;
+    transition: 0.15s ease-out all;
+    z-index: 2;
+}
+
+.confirm-method .inputs{
+	display: flex;
+	justify-content: space-between;
+}
+
+.confirm-method .inputs .group{
+	width: 100%;
+	margin-left: 32px;
+}
+
+.confirm-method .inputs .group:first-child{
+	margin-left: 0;
+}
+
+.float .error{
+	border-bottom: 1px solid #FF7070;
+	color: #FF7070;
+}
+
+.primary-btn:disabled{
+	opacity: 0.5;
+	cursor: default;
+}
+
+.loading-wrapp img{
+	animation: rotateRing .6s linear infinite;
+}
+
+.rules {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 32px;
+}
+
+.rules .rule{
+	width: 50%;
+	color: rgba(0, 0, 0, .30);
+	margin-bottom: 32px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.rules .rule:nth-child(even){
+	width: calc(50% - 32px);;
+	margin-right: 16px;
+}
+
+.rules .rule:last-child{
+	margin-bottom: 0;
+}
+
+.rules .rule span{
+	color: #000;
+}
+
+.currency-select-wrapp{
+	position: relative;
+}
+
+.currency-select-wrapp label img{
+	position: absolute;
+	right: 8px;
+	width: 8px;
+	transform: rotate(-90deg);
+	top: calc(50% - 4px);
+}
+
+.currency-select-wrapp .select-list{
+	position: absolute;
+	width: 100%;
+	background: #fff;
+	border-radius: 14px;
+	left: -4px;
+	box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.10);
+	top: 22px;
+	transition: .2s ease-in-out;
+	overflow: hidden;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.currency-select-wrapp.isActive .select-list{
+	top: 14px;
+	pointer-events: all;
+	opacity: 1;
+}
+
+.currency-select-wrapp .select-list .select-list-item{
+	padding: 8px 16px;
+	transition: .2s ease-in-out;
+}
+
+.currency-select-wrapp .select-list .select-list-item:hover{
+	background: var(--primary-color-15);
+	color: var(--primary-color);
+}
+
+.currency-select-wrapp .select-list .select-list-item.isActive{
+	background: var(--primary-color-15);
+	color: var(--primary-color);
+}
+
+@media (max-width: 425px){
+	.confirm-method .inputs{
+		flex-direction: column;
+	}
+
+	.confirm-method .inputs .group{
+		margin-left: 0;
+	}
+
+	.confirm-payment-wrapp .btns .back img{
+		margin-right: 0;
+	}
+
+	.confirm-payment-wrapp .btns .back span{
+		display: none;
+	}
+
+	.confirm-payment-wrapp .rules{
+		flex-direction: column;
+	}
+
+	.confirm-payment-wrapp .rules .rule{
+		width: 100%;
+		margin-right: 0;
+	}
+}

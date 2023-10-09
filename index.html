@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Метод</title>
+      <link rel="stylesheet" href="assets/css/colors.css">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/method.css">
+      <link rel="stylesheet" href="assets/css/confirm.css">
+      <link rel="stylesheet" href="assets/css/paying-payment.css">
+      <link rel="stylesheet" href="assets/css/media.css">
+      <script src="assets/js/jquery-3.6.0.js"></script>
+   </head>
+   <body>
+      <header class="flex jc-center">
+         <div class="container flex jc-center al-center">
+            <a href="" class="logo flex al-center"><img src="assets/img/logo-m.svg" class="mr-16"><span>Aaio Payment</span></a>
+         </div>
+      </header>
+      <div class="payment-wrapp container">
+      <div class="progress">
+         <ul>
+            <li class="isActive">Метод</li>
+            <li>Подтверждение</li>
+            <li>Оплата</li>
+         </ul>
+      </div>
+      <div class="content">
+         <div class="methods-payment-wrapp">
+            <div class="info-payment-wrapp">
+               <div class="title">
+                  <div class="left-content">
+                     <a href="" class="back">
+                     <img src="assets/img/arrow.svg" alt="<">
+                     </a>
+                     <span>csgorun.run</span>
+                  </div>
+                  <div class="right-content">
+                     <span>100</span>&nbsp;UAH
+                  </div>
+               </div>
+               <div class="description-wrapp">
+                  <div class="description">Описание товара</div>
+                  <div class="time-payment">
+                     Оплатить до&nbsp;<span>19.06.2023, 21:23</span>
+                  </div>
+               </div>
+            </div>
+            <div class="methods-payment">
+               <div class="digital-wallet method-payment-item">
+                  <div class="title">Электронные платежи</div>
+                  <div class="method-payment-wrapp">
+                     <div class="payment-item" data-method-payment="digital">
+                        <img src="assets/img/ua-card.svg" width="30" height="30">
+                        <span class="comission">2%</span>
+                     </div>
+                     <div class="payment-item" data-method-payment="digital">
+                        <img src="assets/img/qiwi.svg" width="30" height="30">
+                        <span class="comission">2%</span>
+                     </div>
+                     <div class="payment-item" data-method-payment="pm">
+                        <img src="assets/img/pm.svg" width="30" height="30">
+                        <span class="comission">2%</span>
+                     </div>
+                     <div class="payment-item" data-method-payment="digital">
+                        <img src="assets/img/sbp.svg" width="30" height="30">
+                        <span class="comission">2%</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="crypto-wallet method-payment-item">
+                  <div class="title">Криптовалюты</div>
+                  <div class="method-payment-wrapp">
+                     <div class="payment-item" data-method-payment="crypto">
+                        <img src="assets/img/usdt-trc-20.svg" width="30" height="30">
+                        <span class="comission">2%</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="crypto-wallet method-payment-item">
+                  <div class="title">Криптовалюты</div>
+                  <div class="method-payment-wrapp">
+                     <div class="payment-item" data-method-payment="coupon">
+                        <img src="assets/img/coupon.svg" width="30" height="30">
+                        <span>Купон</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="confirm-payment-wrapp">
+            <div class="confirm-method" data-name-confirm="digital">
+               <div class="info-payment-wrapp">
+                  <div class="title">
+                     <div class="left-content">
+                        <div class="payment-logo">
+                           <img src="assets/img/sbp.svg" alt="sbp">
+                        </div>
+                        <span>CБП</span>
+                     </div>
+                     <div class="right-content">
+                        <span>102</span>&nbsp;UAH
+                     </div>
+                  </div>
+                  <div class="description-wrapp">
+                     <div class="description">Описание товара</div>
+                     <div class="time-payment">
+                        Осталось:&nbsp;<span>21:23</span>
+                     </div>
+                  </div>
+               </div>
+               <form action="">
+                  <div class="inputs">
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" class="email" name="email" id="email">
+                           <label for="email">Эл. Почта</label>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="btns">
+                     <div class="back flex al-center">
+                        <img src="assets/img/arrow.svg" width="10">
+                        <span>Назад</span>
+                     </div>
+                     <button type="submit" class="primary-btn"><img src="assets/img/wallet.svg" width="20" height="20" alt="">Оплатить</button>
+                  </div>
+               </form>
+            </div>
+            <div class="confirm-method" data-name-confirm="crypto">
+               <div class="info-payment-wrapp">
+                  <div class="title">
+                     <div class="left-content">
+                        <div class="payment-logo">
+                           <img src="assets/img/sbp.svg" alt="sbp">
+                        </div>
+                        <span>USDT</span>
+                     </div>
+                     <div class="right-content">
+                        <span>102</span>&nbsp;UAH
+                     </div>
+                  </div>
+                  <div class="description-wrapp">
+                     <div class="description">Описание товара</div>
+                     <div class="time-payment">
+                        Осталось:&nbsp;<span>21:23</span>
+                     </div>
+                  </div>
+               </div>
+               <form action="">
+                  <div class="inputs">
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" class="email" name="email" id="email2">
+                           <label for="email3">Эл. Почта</label>
+                        </fieldset>
+                     </div>
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" name="network" id="coupon" value="TRON (TRC-20)" readonly>
+                           <label for="network" class="stay">Сеть</label>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="btns">
+                     <div class="back flex al-center">
+                        <img src="assets/img/arrow.svg" width="10">
+                        <span>Назад</span>
+                     </div>
+                     <button type="submit" class="primary-btn"><img src="assets/img/wallet.svg" width="20" height="20" alt="">Оплатить</button>
+                  </div>
+               </form>
+            </div>
+            <div class="confirm-method" data-name-confirm="pm">
+               <div class="info-payment-wrapp">
+                  <div class="title">
+                     <div class="left-content">
+                        <div class="payment-logo">
+                           <img src="assets/img/sbp.svg" alt="sbp">
+                        </div>
+                        <span>USDT</span>
+                     </div>
+                     <div class="right-content">
+                        <span>102</span>&nbsp;UAH
+                     </div>
+                  </div>
+                  <div class="description-wrapp">
+                     <div class="description">Описание товара</div>
+                     <div class="time-payment">
+                        Осталось:&nbsp;<span>21:23</span>
+                     </div>
+                  </div>
+               </div>
+               <form action="">
+                  <div class="inputs">
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" class="email" name="email" id="email2">
+                           <label for="email3">Эл. Почта</label>
+                        </fieldset>
+                     </div>
+                     <div class="group float">
+                        <fieldset class="currency-select-wrapp">
+                           <input type="text" name="currency" class="currency-select" id="currency" value="UAH" readonly>
+                           <label for="currency" class="stay">Валюта</label>
+                           <label><img src="assets/img/arrow.svg"></label>
+                           <div class="select-list">
+                              <div class="select-list-item">USD</div>
+                              <div class="select-list-item">RUB</div>
+                              <div class="select-list-item isActive">UAH</div>
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="btns">
+                     <div class="back flex al-center">
+                        <img src="assets/img/arrow.svg" width="10">
+                        <span>Назад</span>
+                     </div>
+                     <button type="submit" class="primary-btn"><img src="assets/img/wallet.svg" width="20" height="20" alt="">Оплатить</button>
+                  </div>
+               </form>
+            </div>
+            <div class="confirm-method" data-name-confirm="coupon">
+               <div class="info-payment-wrapp">
+                  <div class="title">
+                     <div class="left-content">
+                        <div class="payment-logo">
+                           <img src="assets/img/coupon.svg" alt="sbp">
+                        </div>
+                        <span>Купон</span>
+                     </div>
+                     <div class="right-content">
+                        <span>102</span>&nbsp;UAH
+                     </div>
+                  </div>
+                  <div class="description-wrapp">
+                     <div class="description">Описание товара</div>
+                     <div class="time-payment">
+                        Осталось:&nbsp;<span>21:23</span>
+                     </div>
+                  </div>
+               </div>
+               <form action="">
+                  <div class="inputs">
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" class="email" name="email" id="email3">
+                           <label for="email3">Эл. Почта</label>
+                        </fieldset>
+                     </div>
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" name="coupon" class="coupon" id="coupon">
+                           <label for="coupon">Купон</label>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="rules">
+                     <div class="rule">
+                        Валюта купона должна быть <span>UAH</span>
+                     </div>
+                     <div class="rule">
+                        Купон должен быть на сумму <span>102 UAH</span> либо больше 
+                     </div>
+                     <div class="rule">
+                        Купон доступен для <span>разового</span> использования 
+                     </div>
+                  </div>
+                  <div class="btns">
+                     <div class="back flex al-center">
+                        <img src="assets/img/arrow.svg" width="10">
+                        <span>Назад</span>
+                     </div>
+                     <button type="submit" class="primary-btn"><img src="assets/img/wallet.svg" width="20" height="20" alt="">Оплатить</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+         <div class="paying-payment-wrapp">
+            <div class="paying-payment" data-paying-name="crypto">
+               <div class="qr-code-wrapp">
+                  <div class="qr-code">
+                     <div class="title">
+                        <span>QR-код</span>
+                        <div class="close-btn">
+                           <img src="assets/img/plus.svg" width="">
+                        </div>
+                     </div>
+                     <div class="qr-code-img-wrapp">
+                        <img src="assets/img/qr-code.png" class="qr-code-img">
+                     </div>
+                  </div>
+               </div>
+               <div class="info-payment-wrapp">
+                  <div class="title">
+                     <div class="left-content">
+                        <div class="payment-logo">
+                           <img src="assets/img/sbp.svg" alt="sbp">
+                        </div>
+                        <span>USDT</span>
+                     </div>
+                     <div class="right-content">
+                        <span>2,93</span>&nbsp;USDT
+                     </div>
+                  </div>
+                  <div class="description-wrapp">
+                     <div class="description">Описание товара</div>
+                     <div class="time-payment">
+                        Осталось:&nbsp;<span>21:23</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="inputs">
+                  <div class="group float">
+                     <fieldset>
+                        <input type="text" class="currency" name="number" id="currency" readonly value="2,93">
+                        <label class="stay">К оплате</label>
+                        <div class="copy-btn-value">Скопировано</div>
+                        <div class="copy-btn">
+                           <img src="assets/img/copy.svg">
+                        </div>
+                        <div class="rules">
+                           <div class="rule">
+                              Сумма должна быть точной.&nbsp;<span>Иначе средства будут утеряны</span> 
+                           </div>
+                        </div>
+                     </fieldset>
+                  </div>
+                  <div class="group float">
+                     <fieldset>
+                        <input type="text" name="number" class="number" id="number" readonly value="TTD3kZpFjceVFXy1Bfgsz2Cr9M2WqNbrZA">
+                        <label class="stay">Адрес для оплаты</label>
+                        <div class="copy-btn-value">Скопировано</div>
+                        <div class="copy-btn">
+                           <img src="assets/img/copy.svg">
+                        </div>
+                        <div class="rules">
+                           <div class="rule">
+                              Адрес должен быть точным.&nbsp;<span>Иначе средства будут утеряны</span>
+                           </div>
+                        </div>
+                     </fieldset>
+                  </div>
+               </div>
+               <div class="inputs">
+                  <div class="group float">
+                     <fieldset>
+                        <input type="text" name="bank" class="bank" id="bank" readonly value="TRON (TRC-20)">
+                        <label class="stay">Сеть</label>
+                     </fieldset>
+                  </div>
+               </div>
+               <div class="status-info-payment-wrapp flex space-between al-center">
+                  <div class="status-payment-wrapp flex al-center">
+                     <span>Статус</span>
+                     <div class="status-payment">
+                        Ожидает зачисления
+                        <div class="img">
+                           <img src="assets/img/loading.svg">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="status-confirm-wrapp flex al-center">
+                     <span>Требуется подтверждений</span>
+                     <div class="status-confirm">
+                        6
+                     </div>
+                  </div>
+               </div>
+               <div class="btns">
+                  <a href="#" class="back flex al-center">
+                  <img src="assets/img/arrow.svg" width="10">
+                  <span>На сайт</span>
+                  </a>
+                  <div class="secondary-btn qr-code-btn"><img src="assets/img/qr-code.svg" width="20" height="20" alt="">QR-код</div>
+               </div>
+            </div>
+            <div class="paying-payment-wrapp">
+               <div class="paying-payment" data-paying-name="digital">
+                  <div class="info-payment-wrapp">
+                     <div class="title">
+                        <div class="left-content">
+                           <div class="payment-logo">
+                              <img src="assets/img/sbp.svg" alt="sbp">
+                           </div>
+                           <span>СБП</span>
+                        </div>
+                        <div class="right-content">
+                           <span>102</span>&nbsp;UAH
+                        </div>
+                     </div>
+                     <div class="description-wrapp">
+                        <div class="description">Описание товара</div>
+                        <div class="time-payment">
+                           Осталось:&nbsp;<span>21:23</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="inputs">
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" class="currency" name="number" id="currency" readonly value="255,5">
+                           <label class="stay">К оплате</label>
+                           <div class="copy-btn-value">Скопировано</div>
+                           <div class="copy-btn">
+                              <img src="assets/img/copy.svg">
+                           </div>
+                           <div class="rules">
+                              <div class="rule">
+                                 Сумма должна быть точной.&nbsp;<span>Иначе средства будут утеряны</span> 
+                              </div>
+                           </div>
+                        </fieldset>
+                     </div>
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" name="number" class="number" id="number" readonly value="79789391432">
+                           <label class="stay">На номер</label>
+                           <div class="copy-btn-value">Скопировано</div>
+                           <div class="copy-btn">
+                              <img src="assets/img/copy.svg">
+                           </div>
+                           <div class="rules">
+                              <div class="rule">
+                                 Номер должен быть точным.&nbsp;<span>Иначе средства будут утеряны</span>
+                              </div>
+                           </div>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="inputs">
+                     <div class="group float">
+                        <fieldset>
+                           <input type="text" name="bank" class="bank" id="bank" readonly value="Qiwi Банк">
+                           <label class="stay">Банк</label>
+                        </fieldset>
+                     </div>
+                  </div>
+                  <div class="status-payment-wrapp">
+                     <span>Статус</span>
+                     <div class="status-payment">
+                        Ожидает зачисления
+                        <div class="img">
+                           <img src="assets/img/loading.svg">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="detail-payment">
+               <div class="id-order detail-payment-item">
+                  <div class="title">ID заказа</div>
+                  <span>1687162204</span>
+               </div>
+               <div class="id-payment detail-payment-item">
+                  <div class="title">ID платежа</div>
+                  <span>455dfeca-3518-4e79-bd43-38197e3c0854</span>
+               </div>
+            </div>
+         </div>
+      </div>
+  </div>
+      <footer class="flex jc-center">
+         <div class="container flex space-between al-center">
+            <div class="left-content">
+               <span>Accepting Payments Aaio 2023</span>
+            </div>
+            <div class="right-content">
+               <a href="" class="mr-16">Договор оферты</a>
+               <a type="button" id="dropdownLanguage" class="dropdown-language">RU</a>
+               <div id="dropdownLanguageList" class="dropdown-language-list">
+                  <a class="isActive">RU</a>
+                  <a href="">EN</a>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+   <script src="assets/js/script.js"></script>
+</html>

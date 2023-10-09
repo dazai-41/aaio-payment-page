@@ -1,0 +1,135 @@
+.payment-wrapp{
+	background: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.1);
+	margin: 0 auto;
+	margin-top: 36px;
+	margin-bottom: calc(70px + 36px);
+	position: relative;
+}
+
+.methods-payment-wrapp{
+	transition: .2s ease-in-out;
+}
+
+.methods-payment-wrapp.hidden{
+	opacity: 0;
+	pointer-events: none;
+	height: 0;
+	margin-bottom: 0;
+}
+
+.payment-wrapp .content .info-payment-wrapp{
+	margin-bottom: 32px;
+}
+
+.payment-wrapp .content .info-payment-wrapp .title a.back{
+	width: 40px;
+	height: 40px;
+	display: flex;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, .15);
+	justify-content: center;
+	align-items: center;
+	margin-right: 16px;
+}
+
+.payment-wrapp .content .info-payment-wrapp .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.payment-wrapp .content .info-payment-wrapp .title .left-content{
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+}
+
+.payment-wrapp .content .info-payment-wrapp .title a.back img{
+	width: 12px;
+}
+
+.payment-wrapp .content .info-payment-wrapp .title .right-content{
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.payment-wrapp .content .info-payment-wrapp .description-wrapp{
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	color: var(--text-color-30);
+	align-items: center;
+	font-size: 16px;
+	font-weight: 500;	
+}
+
+.payment-wrapp .content .info-payment-wrapp .description-wrapp .time-payment{
+	padding: 14px 28px;
+	color: var(--primary-color);
+	background: var(--primary-color-15);
+	font-weight: 600;
+	border-radius: 14px;
+}
+
+.methods-payment{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	position: relative;
+}
+
+.methods-payment .method-payment-item{
+	margin-bottom: 32px;
+}
+
+.methods-payment .method-payment-item .title{
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--text-color-30);
+	margin-bottom: 24px;
+}
+
+.methods-payment .method-payment-item .method-payment-wrapp{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap:16px;
+}
+
+.methods-payment .method-payment-item .method-payment-wrapp .payment-item{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80px;
+	height: 70px;
+	border-radius: 14px;
+	flex-direction: column;
+	color: var(--text-color-30);
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: 500;
+	transition: .2s ease-in-out;
+}
+
+.methods-payment .method-payment-item .method-payment-wrapp .payment-item:hover{
+	background: var(--primary-color-10);
+}
+
+@media(max-width: 425px){
+	.payment-wrapp .content .info-payment-wrapp .title .left-content span{
+	width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	}
+
+	.payment-wrapp .content .info-payment-wrapp .title .right-content{
+		font-size: 20px;
+	}
+}

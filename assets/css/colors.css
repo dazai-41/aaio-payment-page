@@ -1,0 +1,12 @@
+:root{
+	--primary-color: #6880FF;
+	--primary-color-80: rgba(104, 128, 255, 0.8);
+	--primary-color-25: rgba(104, 128, 255, 0.25);
+	--primary-color-20: rgba(104, 128, 255, 0.2);
+	--primary-color-15: rgba(104, 128, 255, 0.15);
+	--primary-color-10: rgba(104, 128, 255, 0.1);
+	--gray: rgba(255, 255, 255, 0.3);
+	--text-color: rgba(0, 0, 0, 0.4);
+	--text-color-30: rgba(0, 0, 0, 0.3);
+	--text-color-60: rgba(0, 0, 0, 0.6);
+}
